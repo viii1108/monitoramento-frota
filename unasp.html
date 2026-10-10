@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e22c88de2acd7d7d33df9801e11d628d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e22c88de2acd7d7d33df9801e11d628d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e22c88de2acd7d7d33df9801e11d628d = L.map(
+                "map_e22c88de2acd7d7d33df9801e11d628d",
+                {
+                    center: [-23.532847, -46.657404],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6c49181eef1f382d7c63401ac9b8fb5d = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6c49181eef1f382d7c63401ac9b8fb5d.addTo(map_e22c88de2acd7d7d33df9801e11d628d);
+        
+    
+            var marker_e91694578851fcb8a2439ea6b3114a9c = L.marker(
+                [-23.532847, -46.657404],
+                {
+}
+            ).addTo(map_e22c88de2acd7d7d33df9801e11d628d);
+        
+    
+            var icon_4bb4999b0c70c61784f8a1f55a369bba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95e99bba15ab4ac4287e4895a47922fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62a8ef3ce8e373ba72257ec6d26c2108 = $(`<div id="html_62a8ef3ce8e373ba72257ec6d26c2108" style="width: 100.0%; height: 100.0%;">Parada: ROSA E SILVA C/B</div>`)[0];
+                popup_95e99bba15ab4ac4287e4895a47922fe.setContent(html_62a8ef3ce8e373ba72257ec6d26c2108);
+            
+        
+
+        marker_e91694578851fcb8a2439ea6b3114a9c.bindPopup(popup_95e99bba15ab4ac4287e4895a47922fe)
+        ;
+
+        
+    
+    
+                marker_e91694578851fcb8a2439ea6b3114a9c.setIcon(icon_4bb4999b0c70c61784f8a1f55a369bba);
+            
+    
+            var marker_40714ba8b1c32dba7ebf3dd7ef1c019b = L.marker(
+                [-23.5400895, -46.655288999999996],
+                {
+}
+            ).addTo(map_e22c88de2acd7d7d33df9801e11d628d);
+        
+    
+            var icon_2beb7f84cfea570ac36a98f10f4a2bf9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3b79c1867ab8d68669954ce644a2e38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fcba721619d3a2c830a69312a252fbe = $(`<div id="html_9fcba721619d3a2c830a69312a252fbe" style="width: 100.0%; height: 100.0%;">Ônibus Pref: 21238</div>`)[0];
+                popup_a3b79c1867ab8d68669954ce644a2e38.setContent(html_9fcba721619d3a2c830a69312a252fbe);
+            
+        
+
+        marker_40714ba8b1c32dba7ebf3dd7ef1c019b.bindPopup(popup_a3b79c1867ab8d68669954ce644a2e38)
+        ;
+
+        
+    
+    
+                marker_40714ba8b1c32dba7ebf3dd7ef1c019b.setIcon(icon_2beb7f84cfea570ac36a98f10f4a2bf9);
+            
+    
+            var marker_b51ff16fb92f061dfe96afb67b94f378 = L.marker(
+                [-23.5142025, -46.6546565],
+                {
+}
+            ).addTo(map_e22c88de2acd7d7d33df9801e11d628d);
+        
+    
+            var icon_974aa11c955f623068c6e0bcf30b71b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dc513f7fc677e811653bfb0897cc4c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f52e468cba5cbc06e38b5639d383d266 = $(`<div id="html_f52e468cba5cbc06e38b5639d383d266" style="width: 100.0%; height: 100.0%;">Ônibus Pref: 21239</div>`)[0];
+                popup_2dc513f7fc677e811653bfb0897cc4c9.setContent(html_f52e468cba5cbc06e38b5639d383d266);
+            
+        
+
+        marker_b51ff16fb92f061dfe96afb67b94f378.bindPopup(popup_2dc513f7fc677e811653bfb0897cc4c9)
+        ;
+
+        
+    
+    
+                marker_b51ff16fb92f061dfe96afb67b94f378.setIcon(icon_974aa11c955f623068c6e0bcf30b71b7);
+            
+    
+            var marker_95ee121df3645aed93e1e4b3eb9ad03e = L.marker(
+                [-23.503169, -46.64256125],
+                {
+}
+            ).addTo(map_e22c88de2acd7d7d33df9801e11d628d);
+        
+    
+            var icon_1c2728058c9757f46aefc4dae2de43a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f63e84fab13a5155459fa9652c6bb13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67e7a0592fa7f637e842d1e25e2d8cd4 = $(`<div id="html_67e7a0592fa7f637e842d1e25e2d8cd4" style="width: 100.0%; height: 100.0%;">Ônibus Pref: 21215</div>`)[0];
+                popup_1f63e84fab13a5155459fa9652c6bb13.setContent(html_67e7a0592fa7f637e842d1e25e2d8cd4);
+            
+        
+
+        marker_95ee121df3645aed93e1e4b3eb9ad03e.bindPopup(popup_1f63e84fab13a5155459fa9652c6bb13)
+        ;
+
+        
+    
+    
+                marker_95ee121df3645aed93e1e4b3eb9ad03e.setIcon(icon_1c2728058c9757f46aefc4dae2de43a9);
+            
+</script>
+</html>
